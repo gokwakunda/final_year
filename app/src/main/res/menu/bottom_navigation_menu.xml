@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/pageCard1"-->
+<!--        android:title="Home"-->
+<!--        android:icon="@drawable/home" />-->
+<!--    <item-->
+<!--        android:id="@+id/pageCard2"-->
+<!--        android:title="Post"-->
+<!--        android:icon="@drawable/post" />-->
+<!--    <item-->
+<!--        android:id="@+id/pageCard3"-->
+<!--        android:title="Risk Assessment"-->
+<!--        android:icon="@drawable/alpha_r_circle" />-->
+<!--    <item-->
+<!--        android:id="@+id/pageCard4"-->
+<!--        android:title="About the cancer"-->
+<!--        android:icon="@drawable/post" />-->
+<!--    <item-->
+<!--        android:id="@+id/pageCard5"-->
+<!--        android:title="Chats"-->
+<!--        android:icon="@drawable/chat" />-->
+<!--    <item-->
+<!--        android:id="@+id/pageCard6"-->
+<!--        android:title="Settings"-->
+<!--        android:icon="@drawable/account_settings" />-->
+<!--    &lt;!&ndash; Add more menu items for Card 3, Card 4, Card 5, Card 6, etc. as needed &ndash;&gt;-->
+</menu>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<GridLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/gridLayout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:columnCount="2"-->
+<!--    android:padding="16dp">-->
+<!--    &lt;!&ndash; Page Card 1 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/home" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Home"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:textColor="#00FFFF" />-->
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Page Card 2 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/post" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Post"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:textColor="#00FFFF"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Page Card 3 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/person_foreground"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Text 3"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:textColor="#00FFFF" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Page Card 4 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/person_foreground"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:text="Text 4"-->
+<!--            android:textColor="#00FFFF" />-->
+
+<!--    </LinearLayout>-->
+<!--    &lt;!&ndash; Page Card 5 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/person_foreground" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:text="Text 4"-->
+<!--            android:textColor="#00FFFF" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Page Card 6 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/pageCard4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_columnWeight="1"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/card_background"-->
+<!--        android:layout_marginBottom="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/person_foreground" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/text4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:text="Text 4"-->
+<!--            android:textColor="#00FFFF"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+
+
+<!--</GridLayout>-->

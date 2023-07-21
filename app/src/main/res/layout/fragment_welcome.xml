@@ -1,0 +1,377 @@
+<!-- fragment_video.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <VideoView-->
+<!--        android:id="@+id/videoView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp" />-->
+    <!-- ... Your existing layout code ... -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age"
+        android:id="@+id/age"
+        android:textSize="30dp"/>
+
+    <EditText
+    android:id="@+id/editNumSexual"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:digits="01"
+    android:layout_toRightOf="@+id/age"
+    android:layout_marginTop="5dp"
+        />
+
+        />
+    <TextView
+        android:layout_below="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you drink alcohol?"
+        android:id="@+id/alcohol"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/editNumSexualPartners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="01"
+        android:layout_toRightOf="@+id/alcohol"
+        android:layout_marginTop="40dp"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editFirstSexualIntercourse"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="number"-->
+<!--        android:digits="01" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editNumPregnancies"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="number"-->
+<!--        android:digits="01" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editSmokes"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="number"-->
+<!--        android:digits="01" />-->
+
+
+
+
+</RelativeLayout>
+
+    <!-- Add similar attributes to the remaining EditText fields -->
+
+    <!-- ... Your existing layout code ... -->
+
+<!--</FrameLayout>-->
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:ignore="ExtraText">-->
+
+
+<!-- <TextView-->
+<!--     android:id="@+id/What"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:text="WHAT IS CERVICAL CANVCER"-->
+<!--     android:textSize="20dp"-->
+<!--     android:textColor="@color/green_700"-->
+<!--     />-->
+
+
+<!--    <VideoView-->
+<!--      android:id="@+id/videoView1"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/What"/>-->
+
+<!--    <ImageView-->
+<!--      android:id="@+id/thumbnailImageView1"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:scaleType="fitCenter"-->
+<!--        android:layout_below="@+id/What"/>-->
+
+<!--    <MediaController-->
+<!--      android:id="@+id/mediaController1"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/What"/>-->
+<!-- <ScrollView-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"></ScrollView>-->
+
+<!--   <TextView-->
+<!--     android:id="@+id/symptoms"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:text="SYMPTOMS OF CERVICAL CANCER"-->
+<!--     android:textSize="20dp"-->
+<!--     android:textColor="@color/green_700"-->
+<!--     android:layout_below="@+id/videoView1"-->
+<!--     />-->
+
+
+<!--    <VideoView-->
+<!--      android:id="@+id/videoView2"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/symptoms"/>-->
+
+<!--    <ImageView-->
+<!--      android:id="@+id/thumbnailImageView2"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:scaleType="fitCenter"-->
+<!--      android:layout_below="@+id/symptoms"/>-->
+
+<!--    <MediaController-->
+<!--      android:id="@+id/mediaController2"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_below="@+id/symptoms"/>-->
+
+
+<!--    <TextView-->
+<!--     android:id="@+id/factors"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:text="RISK FACTORS FOR CERVICAL CANCER"-->
+<!--     android:textSize="20dp"-->
+<!--     android:textColor="@color/green_700"-->
+<!--     android:layout_below="@+id/videoView2"-->
+<!--     />-->
+
+
+<!--    <VideoView-->
+<!--      android:id="@+id/videoView3"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/factors"/>-->
+
+<!--    <ImageView-->
+<!--      android:id="@+id/thumbnailImageView3"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:scaleType="fitCenter"-->
+<!--        android:layout_below="@+id/factors"/>-->
+
+<!--    <MediaController-->
+<!--      android:id="@+id/mediaController3"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/factors"-->
+<!--        />-->
+
+<!--   <TextView-->
+<!--     android:id="@+id/screening"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content"-->
+<!--     android:text="SCREENING AND VACCINATION"-->
+<!--     android:textSize="20dp"-->
+<!--     android:textColor="@color/green_700"-->
+<!--     android:layout_below="@+id/videoView3"-->
+<!--     />-->
+
+
+<!--    <VideoView-->
+<!--      android:id="@+id/videoView4"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/screening"/>-->
+
+<!--    <ImageView-->
+<!--      android:id="@+id/thumbnailImageView4"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:scaleType="fitCenter"-->
+<!--        android:layout_below="@+id/screening"/>-->
+
+<!--    <MediaController-->
+<!--      android:id="@+id/mediaController4"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/screening"/>-->
+
+
+
+<!--</RelativeLayout>-->
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--         <TextView-->
+<!--        android:id="@+id/What"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="WHAT IS CERVICAL CANVCER"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/green_700"-->
+<!--        />-->
+
+<!--       <FrameLayout-->
+<!--        android:layout_below="@+id/What"-->
+<!--        android:id="@+id/videoContainer1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <VideoView-->
+<!--            android:id="@+id/videoView1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumbnailImageView1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="fitCenter" />-->
+
+<!--        <MediaController-->
+<!--            android:id="@+id/mediaController1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        </FrameLayout>-->
+<!--        <TextView-->
+<!--        android:id="@+id/symptoms"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="SYMPTOMS OF CERVICAL CANCER"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/green_700"-->
+<!--        android:layout_below="@+id/videoContainer1"-->
+<!--        />-->
+<!--        <FrameLayout-->
+
+<!--        android:id="@+id/videoContainer2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/symptoms"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <VideoView-->
+<!--            android:id="@+id/videoView2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumbnailImageView2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="fitCenter" />-->
+
+<!--        <MediaController-->
+<!--            android:id="@+id/mediaController2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        </FrameLayout>-->
+<!--        <TextView-->
+<!--        android:id="@+id/factors"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="RISK FACTORS FOR CERVICAL CANCER"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/green_700"-->
+<!--        android:layout_below="@+id/videoContainer2"-->
+<!--        />-->
+<!--        <FrameLayout-->
+
+<!--        android:id="@+id/videoContainer3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/factors"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <VideoView-->
+<!--            android:id="@+id/videoView3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumbnailImageView3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="fitCenter" />-->
+
+<!--        <MediaController-->
+<!--            android:id="@+id/mediaController3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        </FrameLayout>-->
+<!--        <TextView-->
+<!--        android:id="@+id/screening"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="SCREENING AND VACCINATION"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/green_700"-->
+<!--        android:layout_below="@+id/videoContainer3"-->
+<!--        />-->
+<!--        <FrameLayout-->
+
+<!--        android:id="@+id/videoContainer4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/screening"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <VideoView-->
+<!--            android:id="@+id/videoView4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/thumbnailImageView4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="fitCenter" />-->
+
+<!--        <MediaController-->
+<!--            android:id="@+id/mediaController4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        </FrameLayout>-->
+
+
+
+<!--      </RelativeLayout>-->
+
+
+
+
+
+
+
+

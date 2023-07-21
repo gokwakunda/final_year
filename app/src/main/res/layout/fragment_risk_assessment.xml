@@ -1,0 +1,1291 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewAge"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNumPartners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of sexual partners"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumPartners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewNumPartners"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewFirstIntercourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First sexual intercourse"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextFirstIntercourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewFirstIntercourse"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNumPregnancies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Num of pregnancies"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumPregnancies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewNumPregnancies"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSmokes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smokes"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSmokes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSmokes"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSmokesYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smokes (years)"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSmokesYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSmokesYears"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSmokesPacksYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smokes (packs/year)"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSmokesPacksYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSmokesPacksYear"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewHormonalContraceptives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hormonal Contraceptives"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextHormonalContraceptives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewHormonalContraceptives"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewHormonalContraceptivesYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hormonal Contraceptives (years)"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextHormonalContraceptivesYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewHormonalContraceptivesYears"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewIUD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IUD"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextIUD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewIUD"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewIUDYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IUD (years)"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextIUDYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewIUDYears"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDs"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs (number)"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsNumber"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:condylomatosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsCondylomatosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsCervicalCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:cervical condylomatosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsCervicalCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsCervicalCondylomatosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsVaginalCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:vaginal condylomatosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsVaginalCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsVaginalCondylomatosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsVulvoPerinealCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:vulvo-perineal condylomatosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsVulvoPerinealCondylomatosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsVulvoPerinealCondylomatosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsSyphilis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:syphilis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsSyphilis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsSyphilis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDPelvicInflammatoryDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:pelvic inflammatory disease"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDPelvicInflammatoryDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDPelvicInflammatoryDisease"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsGenitalHerpes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:genital herpes"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsGenitalHerpes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsGenitalHerpes"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsMolluscumContagiosum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:molluscum contagiosum"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsMolluscumContagiosum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsMolluscumContagiosum"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDAIDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:AIDS"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDAIDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDAIDS"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsHIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:HIV"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsHIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsHIV"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsHepatitisB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:Hepatitis B"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsHepatitisB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsHepatitisB"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsHPV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs:HPV"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsHPV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsHPV"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsNumDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs: Number of diagnosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsNumDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsNumDiagnosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsTimeSinceFirstDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs: Time since first diagnosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsTimeSinceFirstDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsTimeSinceFirstDiagnosis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSTDsTimeSinceLastDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STDs: Time since last diagnosis"
+                android:textSize="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextSTDsTimeSinceLastDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_toRightOf="@id/textViewSTDsTimeSinceLastDiagnosis"/>
+        </LinearLayout>
+
+
+                <Button
+
+                    android:id="@+id/buttonPredict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Predict" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextPrediction"
+                    android:hint="prediction"
+                    android:textColor="#D50000"
+                    android:textSize="25dp"
+
+                    />
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<ScrollView android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <LinearLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ACCESS YOUR RISK"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:textColor="@color/green"-->
+<!--        />-->
+
+<!--        &lt;!&ndash; ... &ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Age" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerAge"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Number of sexual partners" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerNumPartners"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="First sexual intercourse" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerFirstIntercourse"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Num of pregnancies" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerNumPregnancies"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSmokes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes (years)" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSmokesYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes (packs/year)" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSmokesPacksYear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hormonal Contraceptives" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerHormonalContraceptives"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hormonal Contraceptives (years)" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerHormonalContraceptivesYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="IUD" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerIUD"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="IUD (years)" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerIUDYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDs"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs (number)" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsNumber"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:condylomatosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:cervical condylomatosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsCervicalCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:vaginal condylomatosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsVaginalCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:vulvo-perineal condylomatosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsVulvoPerinealCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:syphilis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsSyphilis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:pelvic inflammatory disease" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDPelvicInflammatoryDisease"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:genital herpes" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsGenitalHerpes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:molluscum contagiosum" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsMolluscumContagiosum"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:AIDS" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDAIDS"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:HIV" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsHIV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:Hepatitis B" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsHepatitisB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:HPV" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsHPV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Number of diagnosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsNumDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Time since first diagnosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsTimeSinceFirstDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Time since last diagnosis" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerSTDsTimeSinceLastDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonPredict"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Predict" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/editTextPrediction"-->
+<!--            android:hint="prediction"-->
+<!--            android:textColor="#D50000"-->
+<!--            android:textSize="25dp" />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->
+
+<!--<ScrollView android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <LinearLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ACCESS YOUR RISK"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:textColor="@color/green"-->
+<!--            />-->
+<!--        &lt;!&ndash;<ScrollView&ndash;&gt;-->
+<!--        &lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Age" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextAge"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Number of sexual partners" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextNumPartners"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="First sexual intercourse" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextFirstIntercourse"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Num of pregnancies" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextNumPregnancies"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSmokes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes (years)" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSmokesYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Smokes (packs/year)" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSmokesPacksYear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hormonal Contraceptives" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextHormonalContraceptives"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hormonal Contraceptives (years)" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextHormonalContraceptivesYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="IUD" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextIUD"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="IUD (years)" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextIUDYears"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDs"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs (number)" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsNumber"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:condylomatosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:cervical condylomatosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsCervicalCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:vaginal condylomatosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsVaginalCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:vulvo-perineal condylomatosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsVulvoPerinealCondylomatosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:syphilis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsSyphilis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:pelvic inflammatory disease" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDPelvicInflammatoryDisease"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:genital herpes" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsGenitalHerpes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:molluscum contagiosum" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsMolluscumContagiosum"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:AIDS" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDAIDS"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:HIV" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsHIV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:Hepatitis B" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsHepatitisB"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs:HPV" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsHPV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Number of diagnosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsNumDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Time since first diagnosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsTimeSinceFirstDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="STDs: Time since last diagnosis" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextSTDsTimeSinceLastDiagnosis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number" />-->
+
+<!--        <Button-->
+
+<!--            android:id="@+id/buttonPredict"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Predict" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/editTextPrediction"-->
+<!--            android:hint="prediction"-->
+<!--            android:textColor="#D50000"-->
+<!--            android:textSize="25dp"-->
+
+<!--            />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="cloudinary_cloud_name">dhvdgtaoh</string>
+<string name="cloudinary_api_key">356478511642894</string>
+<string name="cloudinary_api_secret">***************************</string>
+</resources>
+<!--    cloudinary.config({-->
+<!--    cloud_name: 'dhvdgtaoh',-->
+<!--    api_key: ,-->
+<!--    api_secret: '***************************'-->
+<!--    });-->

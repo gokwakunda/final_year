@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:paddingStart="15dp"/>
+
+        <TextView
+            android:id="@+id/logoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Cervical Cancer Awareness"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:layout_toRightOf="@id/logoImg"
+            android:textSize="24dp"
+            android:paddingStart="15dp"
+            />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/profileIconBar"-->
+<!--            style="@style/Widget.MaterialComponents.Button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="34dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_toRightOf="@id/logoName"-->
+<!--            android:src="@drawable/account_settings" />-->
+
+        <!--        <ImageButton-->
+<!--            style="@style/Widget.MaterialComponents.Button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toRightOf="@+id/profileIconBar"-->
+<!--            android:src="@drawable/ic_baseline_search"-->
+<!--            android:layout_marginTop="5dp"/>-->
+    </RelativeLayout>
+
+
+</RelativeLayout>

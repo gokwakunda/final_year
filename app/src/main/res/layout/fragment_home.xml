@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="#F7F7F7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/headerdiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/topbar"/>
+            <!-- <include
+                layout="@layout/categories"/> -->
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/post_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerdiv">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/searchTool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/card_background">
+
+                    <SearchView
+                        android:id="@+id/searchInput"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Search"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    <!-- <ImageButton
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:id="@+id/searchInputBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/searchInput"
+                        android:background="@drawable/btn_background"
+                        android:paddingVertical="10dp"
+                        android:src="@drawable/ic_btn_search"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" /> -->
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/post_listRV"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchTool"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".HomeFragment"-->
+<!--    android:background="#F7F7F7">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/headerdiv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <include-->
+<!--                layout="@layout/topbar"/>-->
+<!--            &lt;!&ndash;            <include&ndash;&gt;-->
+<!--            &lt;!&ndash;                layout="@layout/categories"/>&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+<!--        <ScrollView-->
+<!--            android:id="@+id/post_scroll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/headerdiv">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/searchTool"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:background="@drawable/card_background">-->
+
+
+<!--                    <SearchView-->
+<!--                        android:id="@+id/searchInput"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Search"-->
+<!--                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />-->
+
+<!--                    &lt;!&ndash;                    <ImageButton&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        style="@style/Widget.MaterialComponents.Button"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:id="@+id/searchInputBtn"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_height="35dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_toRightOf="@+id/searchInput"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:background="@drawable/btn_background"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:paddingVertical="10dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:src="@drawable/ic_btn_search"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />&ndash;&gt;-->
+<!--                </RelativeLayout>-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/post_listRV"-->
+<!--                    android:background="@color/gray"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/searchTool"-->
+<!--                    android:layout_marginTop="10dp"/>-->
+
+<!--            </RelativeLayout>-->
+<!--        </ScrollView>-->
+
+<!--    </RelativeLayout>-->
+<!--</FrameLayout>-->

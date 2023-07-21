@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#59686B" /> <!-- Background color of the card -->
+        <corners android:radius="8dp" /> <!-- Radius of the corners in dp -->
+    </shape>

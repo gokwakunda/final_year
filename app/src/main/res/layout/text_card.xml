@@ -1,0 +1,157 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="5px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:padding="16dp"
+        android:background="@drawable/card_background">
+
+        <RelativeLayout
+            android:id="@+id/cardBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginVertical="10dp"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_icon_card"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/textcard_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/profile_icon_card"
+                android:text="okwakunda"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardBody"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="causes of cervical cancer"
+            android:textColor="@color/green_700"
+            android:textSize="30dp" />
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/idimagecard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@+id/textCardTitle"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_200"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+               />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_200"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <RelativeLayout
+            android:id="@+id/View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCardTitle">
+
+<!--            <VideoView-->
+<!--                android:id="@+id/videoView"-->
+<!--                android:layout_width="700dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="700dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:visibility="gone" />-->
+
+            <ImageView
+                android:id="@+id/thumbnailImageView"
+                android:layout_width="700dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_button"
+                android:background="@color/cardview_light_background"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textCardBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idimagecard"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:text=" causes of cervical cancer in young girls?"
+            android:textSize="18dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCardBody"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/comm"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:src="@drawable/commm" />
+
+            <TextView
+                android:id="@+id/commtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/comm"
+                android:text="comment"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/createissue"
+        android:title="Post"
+        android:icon="@drawable/ic_baseline_post_add"/>
+    <item
+        android:id="@+id/risk"
+        android:title="Risk"
+        android:icon="@drawable/alpha_r_circle"/>
+    <item
+        android:id="@+id/videos"
+        android:title="Videos"
+        android:icon="@drawable/youtube_tv"
+        />
+
+    <item
+        android:id="@+id/users"
+        android:title="Users"
+        android:icon="@drawable/chat"/>
+<!--    <item-->
+<!--        android:id="@+id/settings"-->
+<!--        android:title="Settings"-->
+<!--        android:icon="@drawable/ic_baseline_settings"/>-->
+
+</menu>
