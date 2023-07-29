@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.cervical_cancer.adapters.MessageAdaptor;
-import com.example.cervical_cancer.adapters.UsersAdapter;
+import com.example.cervical_cancer.adapters.UsersAdaptor;
 import com.example.cervical_cancer.modals.Message;
 import com.example.cervical_cancer.modals.User;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,14 +30,14 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-public class MessageActivity extends AppCompatActivity implements UsersAdapter.OnUserClickListener {
+public class MessageActivity extends AppCompatActivity implements UsersAdaptor.OnUserClickListener {
     private RecyclerView recyclerView;
     private EditText editTextInput;
     private TextView txtChattingWith;
     private ImageView toolImgView, imgSend;
     private ProgressBar progressBar;
 
-    private UsersAdapter usersAdapter;
+    private UsersAdaptor usersAdapter;
     private String chatRoomId;
     private ArrayList<User> users = new ArrayList<>();
     private ArrayList<Message> messages = new ArrayList<>();
@@ -65,7 +65,7 @@ public class MessageActivity extends AppCompatActivity implements UsersAdapter.O
 
         txtChattingWith.setText(username_of_roommate);
 
-        usersAdapter = new UsersAdapter(users, this, this);
+        usersAdapter = new UsersAdaptor(users, this, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(usersAdapter);
 

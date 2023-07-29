@@ -1,8 +1,5 @@
 package com.example.cervical_cancer;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
             Toast.makeText(LoginActivity.this, "All Fields Must be Filled .", Toast.LENGTH_SHORT).show();
+            loginProgressbar.setVisibility(View.GONE);
         }else{
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
@@ -62,7 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                     } else {
                         emailField.setText("");
                         passwordField.setText("");
-                        Toast.makeText(getApplicationContext(), "Process Error", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter correct details", Toast.LENGTH_SHORT).show();
+                        loginProgressbar.setVisibility(View.GONE);
                     }
                 }
             });

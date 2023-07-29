@@ -55,6 +55,7 @@ public class RiskAssessmentFragment extends Fragment {
         return view;
     }
 
+
     private void performPrediction() {
         // Retrieve input values from EditText fields
         EditText editTextAge = getView().findViewById(R.id.editTextAge);
@@ -184,38 +185,46 @@ public class RiskAssessmentFragment extends Fragment {
         // Make the API call using Retrofit
         Call<PredictionResponse> call = apiService.predictCancer(inputData);
 
+
         call.enqueue(new Callback<PredictionResponse>() {
             @Override
             public void onResponse(Call<PredictionResponse> call, Response<PredictionResponse> response) {
                 if (response != null && response.isSuccessful()) {
                     PredictionResponse predictionResponse = response.body();
                     int prediction = predictionResponse.getPrediction();
-                    // Handle the prediction in your app's UI
-                    Log.d("Prediction", "Prediction: " + prediction);
+                    String probability = predictionResponse.getProbability();
 
-                    // Get the reference to the EditText field
+                    // Handle the prediction and probability in your app's UI
+                    Log.d("Prediction", "Prediction: " + prediction);
+                    Log.d("Probability", "Probability: " + probability);
+
+                    // Get the reference to the EditText fields
                     EditText editTextPrediction = getView().findViewById(R.id.editTextPrediction);
-                    // Set the EditText field based on the prediction result
+                    EditText editTextProbability = getView().findViewById(R.id.editTextProbability);
+
+                    // Set the EditText fields based on the prediction and probability results
                     if (prediction == 1) {
-                        editTextPrediction.setText("you have a high risk of getting cervical cancer");
+                        editTextPrediction.setText("Probability:At Risk");
                     } else if (prediction == 0) {
-                        editTextPrediction.setText("you have a low risk of getting cervical cancer");
+                        editTextPrediction.setText("Probability:No Risk");
                     } else {
-                        editTextPrediction.setText("Unknown");
+                        editTextPrediction.setText("Probability:Unknown");
                     }
+
+                    editTextProbability.setText("Probability: " + probability);
                 } else {
                     // Handle API request failure
                     Log.d("API Error", "API request failed");
                 }
             }
-
-            @Override
+                        @Override
             public void onFailure(Call<PredictionResponse> call, Throwable t) {
                 // Handle API request failure
                 Log.e("API Error", "API request failed", t);
             }
         });
     }
+
 }
 
 

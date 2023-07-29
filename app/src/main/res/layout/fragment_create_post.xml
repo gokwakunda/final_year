@@ -26,7 +26,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="900dp"
             android:layout_centerInParent="true"
             android:layout_marginVertical="20dp"
             android:background="@color/gray">
@@ -34,8 +34,8 @@
             <ImageView
                 android:id="@+id/imageField"
                 android:layout_width="match_parent"
-                android:layout_below="@+id/titleField"
                 android:layout_height="200dp"
+                android:layout_below="@+id/titleField"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/baseline_image"
                 android:scaleType="centerCrop" />
@@ -44,8 +44,8 @@
                 android:id="@+id/videoField"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@id/imageField"
+                android:layout_centerHorizontal="true"
                 android:visibility="gone" />
 
             <Button
@@ -54,8 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageField"
                 android:layout_centerHorizontal="true"
-                android:text="Upload Image"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:text="Upload Image" />
 
             <Button
                 android:id="@+id/uploadVideoButton"
@@ -63,8 +63,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/uploadImageButton"
                 android:layout_centerHorizontal="true"
-                android:text="Upload Video"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:text="Upload Video" />
 
             <EditText
                 android:id="@+id/titleField"
@@ -79,7 +79,7 @@
             <EditText
                 android:id="@+id/detailField"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_below="@id/uploadVideoButton"
                 android:layout_marginVertical="16dp"
                 android:background="@drawable/card_background_gray"
@@ -90,23 +90,22 @@
             <Button
                 android:id="@+id/sendIssueBtn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_below="@+id/detailField"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/btn_background"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="10dp"
-                android:text="SEND" />
+                android:text="SEND"
+                android:textColor="@color/white" />
 
-<!--            <Button-->
-<!--                android:id="@+id/commentButton"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_below="@id/sendIssueBtn"-->
-<!--                android:layout_centerHorizontal="true"-->
-<!--                android:text="Add Comment"-->
-<!--                android:padding="10dp" />-->
+            <!--            <Button-->
+            <!--                android:id="@+id/commentButton"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/sendIssueBtn"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:text="Add Comment"-->
+            <!--                android:padding="10dp" />-->
 
 
         </RelativeLayout>
