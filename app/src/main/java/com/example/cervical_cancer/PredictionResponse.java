@@ -4,16 +4,10 @@ import com.google.gson.annotations.SerializedName;
 
 public class PredictionResponse {
     @SerializedName("prediction")
-    private int prediction;
-    private  String probability;
+   private int prediction;
 
     public int getPrediction() {
         return prediction;
-    }
-
-    public String getProbability() {
-
-        return probability;
     }
 }
 

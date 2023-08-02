@@ -1,0 +1,188 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: " />
+
+    <TextView
+        android:id="@+id/textViewPrediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediction: " />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: " />
+
+    <TextView
+        android:id="@+id/textViewNumOfSexualPartners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Sexual Partners: " />
+
+    <TextView
+        android:id="@+id/textViewFirstSexualIntercourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Sexual Intercourse: " />
+
+    <TextView
+        android:id="@+id/textViewNumOfPregnancies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Pregnancies: " />
+
+    <TextView
+        android:id="@+id/textViewSmokes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smokes: " />
+
+    <TextView
+        android:id="@+id/textViewSmokesYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smokes Years: " />
+
+    <TextView
+        android:id="@+id/textViewSmokesPacksYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smokes Packs/Year: " />
+
+    <TextView
+        android:id="@+id/textViewHormonalContraceptives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hormonal Contraceptives: " />
+
+    <TextView
+        android:id="@+id/textViewHormonalContraceptivesYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hormonal Contraceptives Years: " />
+
+    <TextView
+        android:id="@+id/textViewIUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IUD: " />
+
+    <TextView
+        android:id="@+id/textViewIUDYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IUD Years: " />
+
+    <TextView
+        android:id="@+id/textViewSTDs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Number: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsCondylomatosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Condylomatosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsCervicalCondylomatosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Cervical Condylomatosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsVaginalCondylomatosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Vaginal Condylomatosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsVulvoPerinealCondylomatosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Vulvo Perineal Condylomatosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsSyphilis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Syphilis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsPelvicInflammatoryDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Pelvic Inflammatory Disease: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsGenitalHerpes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Genital Herpes: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsMolluscumContagiosum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Molluscum Contagiosum: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsAIDS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs AIDS: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsHIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs HIV: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsHepatitisB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Hepatitis B: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsHPV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs HPV: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsNumberOfDiagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Number of Diagnosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsTimeSinceFirstDiagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Time Since First Diagnosis: " />
+
+    <TextView
+        android:id="@+id/textViewSTDsTimeSinceLastDiagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STDs Time Since Last Diagnosis: " />
+
+</LinearLayout>

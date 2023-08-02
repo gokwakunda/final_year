@@ -19,11 +19,15 @@
         android:title="Videos"
         android:icon="@drawable/youtube_tv"
         />
-
     <item
-        android:id="@+id/users"
-        android:title="Users"
+        android:id="@+id/usersdata"
+        android:title="Data"
         android:icon="@drawable/chat"/>
+
+<!--    <item-->
+<!--        android:id="@+id/users"-->
+<!--        android:title="Users"-->
+<!--        android:icon="@drawable/chat"/>-->
 <!--    <item-->
 <!--        android:id="@+id/settings"-->
 <!--        android:title="Settings"-->

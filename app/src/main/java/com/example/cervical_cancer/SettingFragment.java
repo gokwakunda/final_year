@@ -3,6 +3,7 @@ package com.example.cervical_cancer;
 
 import static android.app.Activity.RESULT_OK;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -50,7 +51,7 @@ public class SettingFragment extends Fragment {
     private String mParam2;
 
     private Uri imagePath;
-    private Button logoutBtn, uploadBtn;
+    private Button logoutBtn, uploadBtn , adminBtn;
     private ImageView profileImg;
     private TextView userEmailFeild;
 
@@ -86,12 +87,13 @@ public class SettingFragment extends Fragment {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_setting, container, false);
-
+        adminBtn=view.findViewById(R.id.adminBtn);
         logoutBtn = view.findViewById(R.id.logoutBtn);
         profileImg = view.findViewById(R.id.user_profile_img);
         uploadBtn = view.findViewById(R.id.upload_photo_btn);
@@ -120,6 +122,9 @@ public class SettingFragment extends Fragment {
                 startActivity(new Intent(getContext(), LoginActivity.class));
             }
         });
+
+
+
         return view;
     }
     private void uploadImage() {

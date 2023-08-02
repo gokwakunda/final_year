@@ -83,9 +83,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.risk:
                 getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, new RiskAssessmentFragment()).commit();
                 return true;
-            case R.id.users:
-                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, new FriendsFragment()).commit();
+            case R.id.usersdata:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, new UserDataFragment()).commit();
                 return true;
+//            case R.id.users:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, new FriendsFragment()).commit();
+//                return true;
         }
         return false;
     }

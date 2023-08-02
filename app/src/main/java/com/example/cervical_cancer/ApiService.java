@@ -9,8 +9,7 @@ import retrofit2.http.POST;
 public interface ApiService {
     @POST("/predict")
     Call<PredictionResponse> predictCancer(@Body InputData inputData);
-//
-//    Call<String> predictCervicalCancerRisk(InputData inputData);
+
 }
 
 
